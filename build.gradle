@@ -50,6 +50,7 @@ buildscript {
         maven { url "https://artifacts.opensearch.org/snapshots/lucene/" }
         maven { url "https://build.shibboleth.net/nexus/content/groups/public" }
         maven { url "https://build.shibboleth.net/nexus/content/repositories/releases" }
+        gradlePluginPortal()
     }
 
     dependencies {
@@ -448,6 +449,7 @@ repositories {
     maven { url "https://aws.oss.sonatype.org/content/repositories/snapshots" }
     maven { url "https://artifacts.opensearch.org/snapshots/lucene/" }
     maven { url "https://build.shibboleth.net/nexus/content/repositories/releases" }
+    gradlePluginPortal()
 }
 
 tasks.test.finalizedBy(jacocoTestReport)  // report is always generated after tests run
